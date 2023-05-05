@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trap
+  - CheckPoint
+  - Items
+  - Hell
+  - WeakPoint
+  - AreaCheck
+  - BuiletPlayer
+  - Ground
+  - Teleport
+  - Kame
+  - Saw
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Builet
+  - Water
+  - UI
+  - Ground
+  - Player
+  - Kame
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1527477721
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
