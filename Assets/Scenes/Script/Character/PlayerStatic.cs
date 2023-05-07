@@ -11,6 +11,7 @@ public class PlayerStatic : MonoBehaviour
     public int indexScene;
     private float HP;
     private Transform TelePosi;
+    public End end;
 
     public static PlayerStatic instance;
 
@@ -18,6 +19,7 @@ public class PlayerStatic : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         aniPlayer = GetComponent<Animator>();
+        end =FindObjectOfType<End>();
         rb.bodyType = RigidbodyType2D.Dynamic;
         indexScene = 1;
         HP = 100f;
@@ -51,9 +53,7 @@ public class PlayerStatic : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
-            if(indexScene<=2)
-                SceneManager.LoadScene(indexScene + 1);
-            else SceneManager.LoadScene(0);
+            end.OnWin();
         }
         if (collision.gameObject.CompareTag("Saw"))
         {
@@ -65,6 +65,8 @@ public class PlayerStatic : MonoBehaviour
             else Die();
         }
     }
+
+    
 
     public float CurrentHP()
     {
