@@ -10,7 +10,6 @@ public class CharacterSelect : MonoBehaviour
     private int selectedCharacter;
     private void Awake()
     {
-        PlayerPrefs.SetInt("LifeCount", 3);
 
         selectedCharacter = PlayerPrefs.GetInt("SelectedCharacter", 0);
         foreach (GameObject player in skin)

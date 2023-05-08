@@ -34,7 +34,7 @@ public class PlayerManager : MonoBehaviour
     public int AddItem()
     {
         items++;
-        itemCount.text = $"SCORE: {items}";
+        itemCount.text = $" x {items}";
         return items;
     }
 }

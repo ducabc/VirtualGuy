@@ -198,6 +198,7 @@ public class PlayerCtrl : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStr);
             aniPlayer.SetBool("Jump", true);
+            AudioManager.Instance.PlayMusic("Jump");
         }
         else
         {

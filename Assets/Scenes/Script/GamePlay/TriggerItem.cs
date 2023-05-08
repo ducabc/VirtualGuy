@@ -11,6 +11,7 @@ public class TriggerItem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            AudioManager.Instance.PlayMusic("Pick");
             PlayerManager.instance.AddItem();
             Destroy(gameObject);
         }

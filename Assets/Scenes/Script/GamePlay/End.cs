@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class End : MonoBehaviour
 {
     public GameObject win;
     private PlayerStatic playerStatic;
     private int indexScene=1;
+
+    public Text items; 
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class End : MonoBehaviour
     {
         Time.timeScale = 0;
         win.SetActive(true);
+        items.text = PlayerManager.instance.itemCount.text;
     }
     public void OffWin()
     {

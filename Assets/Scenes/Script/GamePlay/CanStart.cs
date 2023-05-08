@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CanStart : MonoBehaviour
 {
-   
+
+    public void Start()
+    {
+        AudioManager.Instance.PlayMusic("Start");
+    }
     public void SelectCharacter()
     {
         SceneManager.LoadScene(1);
